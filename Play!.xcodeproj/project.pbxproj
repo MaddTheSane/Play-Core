@@ -239,6 +239,8 @@
 		3DC5FD8C1BDB7FB1005DA404 /* X86Assembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FD721BDB7FB1005DA404 /* X86Assembler.cpp */; };
 		3DC5FD8D1BDB7FB1005DA404 /* X86Assembler_Fpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FD731BDB7FB1005DA404 /* X86Assembler_Fpu.cpp */; };
 		3DC5FD8E1BDB7FB1005DA404 /* X86Assembler_Sse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5FD741BDB7FB1005DA404 /* X86Assembler_Sse.cpp */; };
+		558BB1B11DF96048001A2B8C /* Iop_MtapMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558BB1AF1DF96048001A2B8C /* Iop_MtapMan.cpp */; };
+		558BB1B41DF960DF001A2B8C /* Iop_Thvpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 558BB1B21DF960DF001A2B8C /* Iop_Thvpool.cpp */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -777,6 +779,10 @@
 		3DC5FEFD1BDB7FF6005DA404 /* ZipInflateStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipInflateStream.h; sourceTree = "<group>"; };
 		3DC5FEFE1BDB7FF6005DA404 /* ZipStoreStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipStoreStream.h; sourceTree = "<group>"; };
 		3DE1F1921BDE1BB00061A39E /* SoundHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundHandler.h; path = Play/tools/PsfPlayer/Source/SoundHandler.h; sourceTree = "<group>"; };
+		558BB1AF1DF96048001A2B8C /* Iop_MtapMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Iop_MtapMan.cpp; sourceTree = "<group>"; };
+		558BB1B01DF96048001A2B8C /* Iop_MtapMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iop_MtapMan.h; sourceTree = "<group>"; };
+		558BB1B21DF960DF001A2B8C /* Iop_Thvpool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Iop_Thvpool.cpp; sourceTree = "<group>"; };
+		558BB1B31DF960DF001A2B8C /* Iop_Thvpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iop_Thvpool.h; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Play!.oecoreplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Play!.oecoreplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		942597D0151470840074E3A3 /* OpenEmuBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenEmuBase.framework; path = ../OpenEmu/build/Release/OpenEmuBase.framework; sourceTree = "<group>"; };
@@ -1260,6 +1266,10 @@
 		3DC5FA641BDB7811005DA404 /* iop */ = {
 			isa = PBXGroup;
 			children = (
+				558BB1B21DF960DF001A2B8C /* Iop_Thvpool.cpp */,
+				558BB1B31DF960DF001A2B8C /* Iop_Thvpool.h */,
+				558BB1AF1DF96048001A2B8C /* Iop_MtapMan.cpp */,
+				558BB1B01DF96048001A2B8C /* Iop_MtapMan.h */,
 				3DC5FA651BDB7811005DA404 /* ArgumentIterator.cpp */,
 				3DC5FA661BDB7811005DA404 /* ArgumentIterator.h */,
 				3DC5FA671BDB7811005DA404 /* DirectoryDevice.cpp */,
@@ -1900,6 +1910,7 @@
 				3DC5FCA81BDB7811005DA404 /* Profiler.cpp in Sources */,
 				3DC5FC6D1BDB7811005DA404 /* Iop_Intrman.cpp in Sources */,
 				3DC5FC381BDB7811005DA404 /* EEAssembler.cpp in Sources */,
+				558BB1B11DF96048001A2B8C /* Iop_MtapMan.cpp in Sources */,
 				3DC5FCAC1BDB7811005DA404 /* MaxSaveImporter.cpp in Sources */,
 				3DC5FC4F1BDB7811005DA404 /* Vif.cpp in Sources */,
 				3DC5FC9E1BDB7811005DA404 /* MIPSCoprocessor.cpp in Sources */,
@@ -1907,6 +1918,7 @@
 				3DC5FC431BDB7811005DA404 /* IPU_MacroblockTypePTable.cpp in Sources */,
 				3DC5FC8B1BDB7811005DA404 /* DirectoryRecord.cpp in Sources */,
 				3DC5FC451BDB7811005DA404 /* MA_EE.cpp in Sources */,
+				558BB1B41DF960DF001A2B8C /* Iop_Thvpool.cpp in Sources */,
 				3DC5FC631BDB7811005DA404 /* Iop_Cdvdfsv.cpp in Sources */,
 				3DC5FCAE1BDB7811005DA404 /* Save.cpp in Sources */,
 				3DC5FC391BDB7811005DA404 /* EeExecutor.cpp in Sources */,
