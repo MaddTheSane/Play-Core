@@ -159,7 +159,27 @@ private:
 
 // TODO: pause/play
 
-// TODO: save states
+// TODO: working save states
+
+- (void)saveStateToFileAtPath:(NSString *)fileName completionHandler:(void (^)(BOOL, NSError *))block
+{
+	//__block auto success = _ps2VM.SaveState(fileName.fileSystemRepresentation);
+	dispatch_async(dispatch_get_global_queue(0, 0), ^{
+		auto succ2 = self->_ps2VM.SaveState(fileName.fileSystemRepresentation);
+		succ2.wait();
+		block(succ2.get(), nil);
+	});
+}
+
+- (void)loadStateFromFileAtPath:(NSString *)fileName completionHandler:(void (^)(BOOL, NSError *))block
+{
+	//__block auto success = _ps2VM.LoadState(fileName.fileSystemRepresentation);
+	dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+		auto succ2 = self->_ps2VM.LoadState(fileName.fileSystemRepresentation);
+		succ2.wait();
+		block(succ2.get(), nil);
+	});
+}
 
 - (void)startEmulation
 {
